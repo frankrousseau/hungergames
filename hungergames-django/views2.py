@@ -4,8 +4,6 @@ from django.shortcuts import render
 import json
 import random
 import requests
-import webbrowser
-from django.views.generic import TemplateView
 import urllib
 import re
 
