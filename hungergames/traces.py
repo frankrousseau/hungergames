@@ -2,10 +2,15 @@ import requests
 
 API_URL = "http://world.openfoodfacts.org/"
 
-
-def get_traces():
-    response = requests.get("%s/traces.json" % API_URL)
+def fetch(path):
+    response = requests.get("%s/%s.json" % (API_URL, path))
     return response.json()
 
-def get_by_traces(product):
-    pass
+def get_traces():
+    return fetch('traces')['tags']
+
+def get_allergens():
+    return fetch('allergens')['tags']
+
+def get_product(barcode):
+    return fetch('api/v0/product/%s' % barcode)
