@@ -4,14 +4,14 @@
 ### install
 
 
+    sudo pip install git+https://github.com/frankrousseau/hungergames
+
+or:
+
     git clone https://github.com/frankrousseau/hungergames
     cd hungergames
     sudo python setup.py install
 
-
-### Data
-
-Data follows OFF API format and are returned as Python dicts
 
 ### Docs
 
