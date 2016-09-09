@@ -32,13 +32,13 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 packages = [
-    'hungergames',
+    'openfoodfacts',
 ]
 
 requires = []
 test_requirements = []
 
-with open('hungergames/__init__.py', 'r') as fd:
+with open('openfoodfacts/__init__.py', 'r') as fd:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fd.read(), re.MULTILINE).group(1)
 
@@ -49,7 +49,7 @@ with open('README.md', 'r') as f:
     readme = f.read()
 
 setup(
-    name='hungergames',
+    name='openfoodfacts',
     version=version,
     description='Easy querying of OpenFoodFacts.',
     long_description=readme,
