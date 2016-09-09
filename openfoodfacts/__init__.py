@@ -22,8 +22,6 @@ def add_fetch_function(facet):
     setattr(openfoodfacts, func.__name__, func)
 
 
-"""
-Build a fetch function for each facet.
-"""
+# Build a fetch function for each facet.
 for facet in facets.facets:
     add_fetch_function(facet)
