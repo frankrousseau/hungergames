@@ -1,22 +1,22 @@
-# Hungergames, Open Food Facts data in your python script
+# Open Food Facts client for your python scripts
 
 
 ### install
 
 
-    sudo pip install git+https://github.com/frankrousseau/hungergames
+    sudo pip install git+https://github.com/frankrousseau/openfoodfacts
 
 or:
 
-    git clone https://github.com/frankrousseau/hungergames
-    cd hungergames
+    git clone https://github.com/frankrousseau/openfoodfacts
+    cd openfoodfacts
     sudo python setup.py install
 
 
 ### Docs
 
-*Get all available trace type*
+*Get all available trace types*
 
 ```python
-traces = hungergames.get_traces()
+traces = openfoodfacts.get_traces()
 ```
